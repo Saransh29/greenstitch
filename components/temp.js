@@ -3,9 +3,11 @@ import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 import { Doughnut } from "react-chartjs-2";
 
 ChartJS.register(ArcElement, Tooltip, Legend);
+
 export const options = {
   responsive: true,
 
+  cutout: 160,
   plugins: {
     legend: {
       display: false,
@@ -31,5 +33,9 @@ export const data = {
 };
 
 export default function Temp() {
-  return <Doughnut data={data} options={options} />;
+  return (
+    <div className=" ">
+      <Doughnut data={data} options={options} />
+    </div>
+  );
 }

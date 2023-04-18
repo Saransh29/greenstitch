@@ -24,7 +24,7 @@ const Home = () => {
                 >
                   <path
                     stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeLinejoin="round"
                     stroke-width="2"
                     d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
                   ></path>
@@ -133,7 +133,7 @@ const Home = () => {
               <div className="w-full justify-center text-center p-3">
                 <p className="font-bold text-xl">Top emissions by type</p>
               </div>
-              <div className="w-full h-full flex justify-center items-center ">
+              <div className=" w-full h-full ">
                 <Temp />
               </div>
               <div className="flex flex-col gap-4 justify-center items-center">
