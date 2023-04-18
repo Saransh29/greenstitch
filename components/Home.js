@@ -3,7 +3,7 @@ import { Top1, Top2, Top3 } from "@/public/icons";
 import { Inter } from "next/font/google";
 import Chart from "./chart";
 import DoughnutChart from "./Doughnut";
-import Temp from "./temp";
+import Nut from "./Doughnut";
 
 const inter = Inter({ subsets: ["latin"] });
 const Home = () => {
@@ -134,7 +134,7 @@ const Home = () => {
                 <p className="font-bold text-xl">Top emissions by type</p>
               </div>
               <div className=" w-full h-full ">
-                <Temp />
+                <Nut />
               </div>
               <div className="flex flex-col gap-4 justify-center items-center">
                 <div className="flex flex-row justify-between w-[190px]">

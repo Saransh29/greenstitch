@@ -1,9 +1,13 @@
+import React from "react";
+import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 import { Doughnut } from "react-chartjs-2";
-import { faker } from "@faker-js/faker";
 
-const options = {
+ChartJS.register(ArcElement, Tooltip, Legend);
+
+export const options = {
   responsive: true,
 
+  cutout: 160,
   plugins: {
     legend: {
       display: false,
@@ -11,42 +15,27 @@ const options = {
   },
 };
 
-// export const data = {
-//   datasets: [
-//     {
-//       label: "Spinning",
-//       data: faker.datatype.number({ min: 0, max: 50000 }),
-//       backgroundColor: "rgba(87, 204, 120, 1)",
-//     },
-//     {
-//       label: "Transportation",
-//       data: faker.datatype.number({ min: 0, max: 50000 }),
-//       backgroundColor: "rgba(85, 219, 219, 1)",
-//     },
-//     {
-//       label: "Carding",
-//       data: faker.datatype.number({ min: 0, max: 50000 }),
-//       backgroundColor: "rgba(226, 255, 50, 1)",
-//     },
-//     {
-//       label: "Heating & Cooling",
-//       data: faker.datatype.number({ min: 0, max: 50000 }),
-//       backgroundColor: "rgba(254, 193, 2, 1)",
-//     },
-//   ],
-// };
-const data = {
-  labels: ["a", "b", "c", "d"],
+export const data = {
+  labels: ["Spinning", "Transportation", "Carding", "Heating & Cooling"],
   datasets: [
     {
-      data: [300, 50, 100, 50],
-      backgroundColor: "rgba(87, 204, 120, 1)",
+      data: [22, 16, 27, 35],
+
+      backgroundColor: [
+        "rgba(87, 204, 120, 1)",
+        "rgba(85, 219, 219, 1)",
+        "rgba(226, 255, 50, 1)",
+        "rgba(254, 193, 2, 1)",
+      ],
+      borderwidth: 0,
     },
   ],
 };
 
-export default function DoughnutChart() {
+export default function Nut() {
   return (
-    <div className="">{/* <Doughnut data={data} options={options} /> */}</div>
+    <div className=" ">
+      <Doughnut data={data} options={options} />
+    </div>
   );
 }
