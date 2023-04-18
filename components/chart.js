@@ -23,6 +23,9 @@ ChartJS.register(
 export const options = {
   responsive: true,
   scales: {
+    r: {
+      ticks: {},
+    },
     x: {
       stacked: true,
       grid: {

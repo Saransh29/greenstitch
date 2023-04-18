@@ -6,7 +6,6 @@ specifiers:
   chart.js: ^4.2.1
   eslint: 8.38.0
   eslint-config-next: 13.3.0
-  faker: ^6.6.6
   next: 13.3.0
   postcss: 8.4.22
   react: 18.2.0
@@ -20,7 +19,6 @@ dependencies:
   chart.js: 4.2.1
   eslint: 8.38.0
   eslint-config-next: 13.3.0_eslint@8.38.0
-  faker: 6.6.6
   next: 13.3.0_biqbaboplfbrettd7655fr4n2y
   postcss: 8.4.22
   react: 18.2.0
@@ -1087,10 +1085,6 @@ packages:
   /esutils/2.0.3:
     resolution: {integrity: sha512-kVscqXk4OCp68SZ0dkgEKVi6/8ij300KBWTJq32P/dYeWTSwK41WyTxalN1eRmA5Z9UU/LX9D7FWSmV9SAYx6g==}
     engines: {node: '>=0.10.0'}
-    dev: false
-
-  /faker/6.6.6:
-    resolution: {integrity: sha512-9tCqYEDHI5RYFQigXFwF1hnCwcWCOJl/hmll0lr5D2Ljjb0o4wphb69wikeJDz5qCEzXCoPvG6ss5SDP6IfOdg==}
     dev: false
 
   /fast-deep-equal/3.1.3:
