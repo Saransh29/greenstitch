@@ -65,8 +65,8 @@ const Sidebar = () => {
             </l1>
 
             <l1>
-              <p className="text-sm p-2 px-5 font-normal leading-5">
-                DASHBOARD
+              <p className="text-xs p-2 px-5 font-normal leading-5">
+                D A S H B O A R D
               </p>
             </l1>
 
@@ -106,8 +106,8 @@ const Sidebar = () => {
               </ul>
             </li>
             <l1>
-              <p className="pt-8 text-sm p-2 px-5 font-normal leading-5">
-                PAGES
+              <p className="pt-8 text-xs p-2 px-5 font-normal leading-5">
+                P A G E S
               </p>
             </l1>
             <li>
