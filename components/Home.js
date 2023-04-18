@@ -1,6 +1,7 @@
 import React from "react";
 import { Top1, Top2, Top3 } from "@/public/icons";
 import { Inter } from "next/font/google";
+import Chart from "./chart";
 
 const inter = Inter({ subsets: ["latin"] });
 const Home = () => {
@@ -99,8 +100,70 @@ const Home = () => {
           </div>
         </div>
         <div className="flex flex-row ">
-          <div className="bg-yellow-300 w-[800px] h-[382px] mx-8 my-1 rounded-xl shadow-md"></div>
-          <div className="bg-blue-200 w-[375px] h-[377px] my-1 rounded-xl shadow-md"></div>
+          <div className="bg-white w-[800px] h-[382px] mx-8 my-1 rounded-xl shadow-md">
+            <div className="flex flex-row justify-around">
+              <p className="text-2xl font-bold p-7">Carbon Footprint</p>
+              <div className="flex flex-row gap-4 justify-center items-center">
+                <div className="flex flex-row gap-1 items-center">
+                  <div className="rounded-full bg-[#57CC78] w-[9px] h-[9px] "></div>
+                  <p className="text-xs font-semibold">Spinning</p>
+                </div>
+                <div className="flex flex-row gap-1 items-center">
+                  <div className="rounded-full bg-[#55DBDB] w-[9px] h-[9px] "></div>
+                  <p className="text-xs font-semibold">Transportation</p>
+                </div>
+                <div className="flex flex-row gap-1 items-center">
+                  <div className="rounded-full bg-[#E2FF32] w-[9px] h-[9px] "></div>
+                  <p className="text-xs font-semibold">Carding</p>
+                </div>
+                <div className="flex flex-row gap-1 items-center">
+                  <div className="rounded-full bg-[#FEC102] w-[9px] h-[9px] "></div>
+                  <p className="text-xs font-semibold">Heating & Cooling</p>
+                </div>
+              </div>
+            </div>
+            <div className="flex justify-center items-center ">
+              <Chart />
+            </div>
+          </div>
+          <div className="bg-white w-[375px] h-[377px] my-1 rounded-xl shadow-md">
+            <div className="flex flex-col">
+              <div className="w-full justify-center text-center p-3">
+                <p className="font-bold text-xl">Top emissions by type</p>
+              </div>
+              <div className="w-[180px] h-[180px]"></div>
+              <div className="flex flex-col gap-4 justify-center items-center">
+                <div className="flex flex-row justify-between w-[190px]">
+                  <div className="flex flex-row gap-1 items-center">
+                    <div className="rounded-full bg-[#57CC78] w-[9px] h-[9px] "></div>
+                    <p className="text-xs font-semibold">Spinning</p>
+                  </div>
+                  <p className="text-xs font-semibold">22%</p>
+                </div>
+                <div className="flex flex-row justify-between w-[190px]">
+                  <div className="flex flex-row gap-1 items-center">
+                    <div className="rounded-full bg-[#55DBDB] w-[9px] h-[9px] "></div>
+                    <p className="text-xs font-semibold">Transportation</p>
+                  </div>
+                  <p className="text-xs font-semibold">22%</p>
+                </div>
+                <div className="flex flex-row justify-between w-[190px]">
+                  <div className="flex flex-row gap-1 items-center">
+                    <div className="rounded-full bg-[#E2FF32] w-[9px] h-[9px] "></div>
+                    <p className="text-xs font-semibold">Carding</p>
+                  </div>
+                  <p className="text-xs font-semibold">22%</p>
+                </div>
+                <div className="flex flex-row justify-between w-[190px]">
+                  <div className="flex flex-row gap-1 items-center">
+                    <div className="rounded-full bg-[#FEC102] w-[9px] h-[9px] "></div>
+                    <p className="text-xs font-semibold">Heating & Cooling</p>
+                  </div>
+                  <p className="text-xs font-semibold">22%</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
