@@ -2,6 +2,8 @@ import React from "react";
 import { Top1, Top2, Top3 } from "@/public/icons";
 import { Inter } from "next/font/google";
 import Chart from "./chart";
+import DoughnutChart from "./Doughnut";
+import Temp from "./temp";
 
 const inter = Inter({ subsets: ["latin"] });
 const Home = () => {
@@ -131,7 +133,9 @@ const Home = () => {
               <div className="w-full justify-center text-center p-3">
                 <p className="font-bold text-xl">Top emissions by type</p>
               </div>
-              <div className="w-[180px] h-[180px]"></div>
+              <div className="w-full h-full flex justify-center items-center ">
+                <Temp />
+              </div>
               <div className="flex flex-col gap-4 justify-center items-center">
                 <div className="flex flex-row justify-between w-[190px]">
                   <div className="flex flex-row gap-1 items-center">
