@@ -98,7 +98,10 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-grow bg-green-200"></div>
+        <div className="flex flex-row ">
+          <div className="bg-yellow-300 w-[800px] h-[382px] mx-8 my-1 rounded-xl shadow-md"></div>
+          <div className="bg-blue-200 w-[375px] h-[377px] my-1 rounded-xl shadow-md"></div>
+        </div>
       </div>
     </div>
   );
