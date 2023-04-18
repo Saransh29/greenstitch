@@ -133,7 +133,7 @@ const Home = () => {
               <div className="w-full justify-center text-center p-3">
                 <p className="font-bold text-xl">Top emissions by type</p>
               </div>
-              <div className=" w-full h-full ">
+              <div className=" w-[199px] h-[199px] overflow-hidden flex justify-center">
                 <Nut />
               </div>
               <div className="flex flex-col gap-4 justify-center items-center">

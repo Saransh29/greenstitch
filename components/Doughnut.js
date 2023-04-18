@@ -5,9 +5,9 @@ import { Doughnut } from "react-chartjs-2";
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 export const options = {
+  cutout: 160,
   responsive: true,
 
-  cutout: 160,
   plugins: {
     legend: {
       display: false,
@@ -34,7 +34,7 @@ export const data = {
 
 export default function Nut() {
   return (
-    <div className=" ">
+    <div className="">
       <Doughnut data={data} options={options} />
     </div>
   );
