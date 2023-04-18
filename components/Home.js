@@ -149,21 +149,21 @@ const Home = () => {
                     <div className="rounded-full bg-[#55DBDB] w-[9px] h-[9px] "></div>
                     <p className="text-xs font-semibold">Transportation</p>
                   </div>
-                  <p className="text-xs font-semibold">22%</p>
+                  <p className="text-xs font-semibold">16%</p>
                 </div>
                 <div className="flex flex-row justify-between w-[190px]">
                   <div className="flex flex-row gap-1 items-center">
                     <div className="rounded-full bg-[#E2FF32] w-[9px] h-[9px] "></div>
                     <p className="text-xs font-semibold">Carding</p>
                   </div>
-                  <p className="text-xs font-semibold">22%</p>
+                  <p className="text-xs font-semibold">27%</p>
                 </div>
                 <div className="flex flex-row justify-between w-[190px]">
                   <div className="flex flex-row gap-1 items-center">
                     <div className="rounded-full bg-[#FEC102] w-[9px] h-[9px] "></div>
                     <p className="text-xs font-semibold">Heating & Cooling</p>
                   </div>
-                  <p className="text-xs font-semibold">22%</p>
+                  <p className="text-xs font-semibold">35%</p>
                 </div>
               </div>
             </div>
