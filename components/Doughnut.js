@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 import { Doughnut } from "react-chartjs-2";
@@ -16,6 +17,8 @@ export const options = {
 };
 
 export const data = {
+  maintainAspectRatio: true,
+  responsive: true,
   labels: ["Spinning", "Transportation", "Carding", "Heating & Cooling"],
   datasets: [
     {
@@ -34,7 +37,7 @@ export const data = {
 
 export default function Nut() {
   return (
-    <div className="">
+    <div className="flex flex-auto">
       <Doughnut data={data} options={options} />
     </div>
   );
